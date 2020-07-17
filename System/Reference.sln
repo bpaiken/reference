@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Disclone", "Disclone", "{5A675595-D285-4877-9219-D5D0D94EFBD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{BBBC8E95-3E7C-481C-8309-130DBEA10F35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disclone.Host.Api", "Disclone\Host\Disclone.Host.Api\Disclone.Host.Api.csproj", "{BB7AB29E-3738-4B4D-B853-A6F61151A916}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB7AB29E-3738-4B4D-B853-A6F61151A916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB7AB29E-3738-4B4D-B853-A6F61151A916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB7AB29E-3738-4B4D-B853-A6F61151A916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB7AB29E-3738-4B4D-B853-A6F61151A916}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BBBC8E95-3E7C-481C-8309-130DBEA10F35} = {5A675595-D285-4877-9219-D5D0D94EFBD5}
+		{BB7AB29E-3738-4B4D-B853-A6F61151A916} = {BBBC8E95-3E7C-481C-8309-130DBEA10F35}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC62A685-48B9-48E7-A705-81BA8E4D1E29}
+	EndGlobalSection
+EndGlobal
