@@ -10,10 +10,17 @@ using Newtonsoft.Json;
 
 namespace Disclone.Host.Api
 {
-    public static class Function1
+    public class Function1
     {
+        private readonly IRepository _repository;
+
+        public Function1(IRepository repository)
+        {
+            _repository = repository;
+        }
+
         [FunctionName("Function1")]
-        public static async Task<IActionResult> Run(
+        public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "hello")] HttpRequest req,
             ILogger log)
         {
@@ -27,7 +34,7 @@ namespace Disclone.Host.Api
 
             string responseMessage = string.IsNullOrEmpty(name)
                 ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
-                : $"Hello, {name}. This HTTP triggered function executed successfully.";
+                : $"Hello, {name}. DI Test: {_repository.GetData()}";
 
             return new OkObjectResult(responseMessage);
         }
