@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Configuration" />
+      <Folder Include="Manager" />
+      <Folder Include="Model" />
+      <Folder Include="Repository" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Core\Reference.Core\Reference.Core.csproj" />
+      <ProjectReference Include="..\..\..\Data\Reference.Data.Cosmos\Reference.Data.Cosmos.csproj" />
+    </ItemGroup>
+
+</Project>

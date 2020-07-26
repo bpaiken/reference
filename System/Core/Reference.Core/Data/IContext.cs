@@ -12,9 +12,9 @@ namespace Reference.Core.Data
 
     public interface IDataContext : IContext
     {
-        Task<TEntity> InsertAsync<TEntity>(TEntity entity) where TEntity : Entity;
-        Task<TEntity> UpdateAsync<TEntity>(TEntity entity) where TEntity : Entity;
-        Task<TEntity> GetByIdAsync<TEntity>(object id) where TEntity : Entity;
-        Task<TEntity> DeleteAsync<TEntity>(object id) where TEntity : Entity;
+        Task<TEntity> InsertAsync<TId, TEntity>(TEntity entity) where TEntity : EntityBase<TId>;
+        Task<TEntity> UpdateAsync<TId, TEntity>(TEntity entity) where TEntity : EntityBase<TId>;
+        Task<TEntity> GetByIdAsync<TId, TEntity>(object id) where TEntity : EntityBase<TId>;
+        Task<TEntity> DeleteAsync<TId, TEntity>(object id) where TEntity : EntityBase<TId>;
     }
 }
